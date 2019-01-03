@@ -1,0 +1,22 @@
+{
+  "name": "electron-native-toolkit",
+  "version": "3.0.13",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "rebuild:win": "electron-rebuild -f -w sharp sqlite3 -m ./windows",
+    "rebuild:mac": "electron-rebuild -f -w sharp sqlite3 -m ./mac-os",
+    "instll:win": "cd ./windows && npm i",
+    "instll:mac": "cd ./mac-os && npm i",
+    "run": "electron ./test",
+    "node-prune": "cd ./tool/ && node-prune ./../windows && node-prune ./../mac-os",
+    "clean":"node ./tool/clean.js && npm run node-prune"
+  },
+  "author": "ui@nullice.com",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^3.0.13",
+    "electron-rebuild": "^1.8.2",
+    "fs-extra": "^7.0.1"
+  }
+}

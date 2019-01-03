@@ -1,0 +1,7 @@
+{
+  "name": "electron-native-toolkit",
+  "dependencies": {
+    "sharp": "^0.21.1",
+    "sqlite3": "^4.0.4"
+  }
+}
