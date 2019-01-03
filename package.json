@@ -10,7 +10,8 @@
     "instll:mac": "cd ./mac-os && npm i",
     "run": "electron ./test",
     "node-prune": "cd ./tool/ && node-prune ./../windows && node-prune ./../mac-os",
-    "clean":"node ./tool/clean.js && npm run node-prune"
+    "clean":"node ./tool/clean.js && npm run node-prune",
+    "publish": "npm --registry=registry=http://registry.npmjs.org  publish"
   },
   "author": "ui@nullice.com",
   "license": "MIT",
@@ -18,5 +19,9 @@
     "electron": "^3.0.13",
     "electron-rebuild": "^1.8.2",
     "fs-extra": "^7.0.1"
-  }
+  },
+  "files": [
+    "windows",
+    "mac-os"
+  ]
 }
