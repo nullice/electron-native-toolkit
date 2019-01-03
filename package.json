@@ -9,8 +9,8 @@
     "instll:win": "cd ./windows && npm i",
     "instll:mac": "cd ./mac-os && npm i",
     "run": "electron ./test",
-    "node-prune": "cd ./tool/ && node-prune ./../windows && node-prune ./../mac-os",
-    "clean":"node ./tool/clean.js && npm run node-prune"
+    "node-prune": "cd ./tool/ && ./node-prune ./../windows && ./node-prune ./../mac-os",
+    "clean": "node ./tool/clean.js && npm run node-prune"
   },
   "author": "ui@nullice.com",
   "license": "MIT",
