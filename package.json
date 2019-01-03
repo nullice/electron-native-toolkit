@@ -1,6 +1,6 @@
 {
   "name": "electron-native-toolkit",
-  "version": "3.0.13",
+  "version": "3.0.13-a",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "run": "electron ./test",
     "node-prune": "cd ./tool/ && ./node-prune ./../windows && ./node-prune ./../mac-os",
     "clean":"node ./tool/clean.js && npm run node-prune",
-    "publish": "npm --registry=registry=http://registry.npmjs.org  publish"
+    "publish": "npm --registry=http://registry.npmjs.org  publish"
   },
   "author": "ui@nullice.com",
   "license": "MIT",
