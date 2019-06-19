@@ -2,6 +2,7 @@
   "name": "electron-native-toolkit",
   "dependencies": {
     "sharp": "^0.21.1",
+    "socket.io": "^2.2.0",
     "sqlite3": "^4.0.4"
   }
 }
